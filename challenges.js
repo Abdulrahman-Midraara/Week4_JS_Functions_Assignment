@@ -18,7 +18,22 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-function calculateLateFee(overdueDays) {
+/*function calculateLateFee(overdueDays) {
+   let feePerDay = 0.25;
+   let totalFee = overdueDays * feePerDay;
+   console.log("The late fee is: " + totalFee);
+}
+
+let overdueDays = prompt("Enter the number of overdue days");
+overdueDays = parseInt(overdueDays);
+calculateLateFee(overdueDays);*/
+
+
+
+// Extra Task:
+// - Convert the function into a function expression.
+
+const calculateLateFee = function(overdueDays) {
    let feePerDay = 0.25;
    let totalFee = overdueDays * feePerDay;
    console.log("The late fee is: " + totalFee);
@@ -27,12 +42,6 @@ function calculateLateFee(overdueDays) {
 let overdueDays = prompt("Enter the number of overdue days");
 overdueDays = parseInt(overdueDays);
 calculateLateFee(overdueDays);
-
-
-
-// Extra Task:
-// - Convert the function into a function expression.
-
 
 
 /*
@@ -55,11 +64,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+/*function findColorMeaning(favoriteColor) {
+   if (favoriteColor == "Blue") {
+       console.log("Blue: You love calm and peace.");
+   } else if (favoriteColor === "Red") {
+       console.log("Red: You are passionate and bold.");
+   } else if (favoriteColor === "Green") {
+       console.log("Green: You are connected to nature.");
+   } else if (favoriteColor === "Yellow") {
+       console.log("Yellow: You radiate happiness and energy.");
+   } else {
+       console.log("That's a unique choice!");
+   }
+   }
+   
+const favoriteColor = prompt("Enter your favorite color ? (Blue, Red, Green, Yellow)");
+findColorMeaning(favoriteColor);
+*/
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+const findColorMeaning = (favoriteColor) => {
+   if (favoriteColor == "Blue") {
+       console.log("Blue: You love calm and peace.");
+   } else if (favoriteColor === "Red") {
+       console.log("Red: You are passionate and bold.");
+   } else if (favoriteColor === "Green") {
+       console.log("Green: You are connected to nature.");
+   } else if (favoriteColor === "Yellow") {
+       console.log("Yellow: You radiate happiness and energy.");
+   } else {
+       console.log("That's a unique choice!");
+   }
+   }
+   
+const favoriteColor = prompt("Enter your favorite color ? (Blue, Red, Green, Yellow)");
+findColorMeaning(favoriteColor);
 
 
 /*
