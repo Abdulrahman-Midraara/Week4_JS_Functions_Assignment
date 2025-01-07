@@ -19,12 +19,12 @@ Output: "The late fee is $2.50."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 function calculateLateFee(overdueDays) {
-   const feePerDay = 0.25;
-   const totalFee = overdueDays * feePerDay;
+   let feePerDay = 0.25;
+   let totalFee = overdueDays * feePerDay;
    console.log("The late fee is: " + totalFee);
 }
 
-const overdueDays = prompt("Enter the number of overdue days");
+let overdueDays = prompt("Enter the number of overdue days");
 overdueDays = parseInt(overdueDays);
 calculateLateFee(overdueDays);
 
